@@ -1,0 +1,35 @@
+{
+  "name": "f8",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "node-sass --watch ./src/resources/scss/ --output src/public/css/",
+    "nodemon": "nodemon --inspect ./src/index.js",
+    "start": "concurrently \"npm run nodemon\" \"npm run watch\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TuanGauTruc12/NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuanGauTruc12/NodeJS/issues"
+  },
+  "homepage": "https://github.com/TuanGauTruc12/NodeJS#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
